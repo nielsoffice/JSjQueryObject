@@ -107,3 +107,4 @@ JavaScript jQuery Object
 
 <br />Reference:
 <br />https://github.com/nielsoffice/JSModulePattern
+<br />https://github.com/nielsoffice/JSObjectClass_ArraysOfData
