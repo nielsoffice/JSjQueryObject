@@ -1,4 +1,4 @@
-# JSjQueryObject
+# JSjQueryObject Encapsulation
 JavaScript jQuery Object 
 
 ```JS
