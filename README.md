@@ -1,13 +1,23 @@
-# JSjQueryObject Encapsulation
+# JSjQueryObject Handling property and property method 
 JavaScript jQuery Object 
 
 ```JS
  const jQueryObject = {
     
-    name : "myName",
-    result : (function() {
+    name_id : {
+    
+      0 : 'id-1',
+      1 : 'id-2'
+
+    },
+    result : function() {
+
+      let pName = this.name_id;
+        
+      const FriendList = (function(z) {
   
         let newFriendName;
+        let nnN = z;
         let name;
         let lastName;
         
@@ -23,17 +33,28 @@ JavaScript jQuery Object
 
         // Expose public data 
         return {
+            nnN,
             init,
-            getNF
+            getNF,
+        
         }
 
-    })()
+       })(pName);
 
+       FriendList.init('firstName','lastName');
+       return [
+         FriendList.getNF(), // get Firstname and lastName
+         FriendList.nnN
+       ]
+
+    }
  }
 
- jQueryObject.result.init('myName','LastName');
- console.log(jQueryObject.result.getNF());
- 
+ jQueryObject.result();
+ console.log(jQueryObject.result());
+
+ // 0 Base
+ console.log(jQueryObject.result()[0]); 
 ```
 
 <br />Reference:
