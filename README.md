@@ -42,30 +42,30 @@ JavaScript jQuery Object
        })(pName);
 
        FriendList.init('firstName','lastName');
-       return [
-         FriendList.getNF(), // get Firstname and lastName
-         FriendList.nnN
-       ]
 
+       return {
+         getFullName : FriendList.getNF(),
+         getObjectProperty : FriendList.nnN
+       }
+    
     }
  }
 
  jQueryObject.result();
  console.log(jQueryObject.result());
 
- // 0 Base
- console.log(jQueryObject.result()[0]); 
+ // Object key base
+ console.log(jQueryObject.result()['getFullName']);
 ```
 
 ```JS
 // Result 
-(2) ['firstName : lastName', {…}]
-    0: "firstName : lastName" 
-    1: {0: 'id-1', 1: 'id-2'}
-    length: 2
-   [[Prototype]]: 
-   Array(0)
-   --------------------------------
+ {getFullName: 'firstName : lastName', getPropertyObject: {…}}
+   getFullName : "firstName : lastName"
+   getPropertyObject : {0: 'id-1', 1: 'id-2'}
+  [[Prototype]] : 
+  Object
+ --------------------------------
    firstName : lastName
 ```
 
