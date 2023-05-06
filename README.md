@@ -57,5 +57,17 @@ JavaScript jQuery Object
  console.log(jQueryObject.result()[0]); 
 ```
 
+```JS
+// Result 
+(2) ['firstName : lastName', {…}]
+    0: "firstName : lastName" 
+    1: {0: 'id-1', 1: 'id-2'}
+    length: 2
+   [[Prototype]]: 
+   Array(0)
+   --------------------------------
+   firstName : lastName
+```
+
 <br />Reference:
 <br />https://github.com/nielsoffice/JSModulePattern
