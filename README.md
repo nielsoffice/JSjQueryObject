@@ -69,5 +69,41 @@ JavaScript jQuery Object
    firstName : lastName
 ```
 
+```JS
+// Simplyfied
+ const jQueryObject = {
+    
+    name_id : {
+    
+      0 : 'id-1',
+      1 : 'id-2'
+
+    },
+    result : function(x = null, y = null) {
+
+        let pName = this.name_id;    
+        let newFriendName;
+        let name  = x;
+        let lastName = y;
+    
+        const getNF = function() { 
+            return name +' : '+lastName; 
+        }
+
+      return {
+         getFullName : getNF(),
+         getObjectProperty : pName
+       }
+    
+    }
+ }
+
+ jQueryObject.result();
+ console.log(jQueryObject.result());
+
+ // Object key base
+ console.log(jQueryObject.result('firstName','lastName')['getFullName']);
+```
+
 <br />Reference:
 <br />https://github.com/nielsoffice/JSModulePattern
