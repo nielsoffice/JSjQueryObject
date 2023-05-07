@@ -129,9 +129,11 @@ JavaScript jQuery Object
  jQueryObject.result();
  console.log(jQueryObject.result());
 
- // Object key base
+ // Property Set Value !
  jQueryObject.x = 'Niel';
  jQueryObject.y = 'Fernandez';
+
+ // Object key base
  console.log(jQueryObject.result()['getFullName']);
 ```
 
