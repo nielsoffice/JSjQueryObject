@@ -105,6 +105,36 @@ JavaScript jQuery Object
  console.log(jQueryObject.result('firstName','lastName')['getFullName']);
 ```
 
+```JS
+// Anonymouse proerpty or initial value ! 
+ const jQueryObject = {
+    
+    x : 'John', // Property Initial Value
+    y : 'Dev',  // Property Initial Value
+    result : function() {
+    
+       let name = this.x;
+       let lastName = this.y;
+    
+       const getNF = function() { 
+         return name +' : '+lastName; 
+       }
+
+       return {
+         getFullName : getNF(),
+       }
+    }
+ }
+
+ jQueryObject.result();
+ console.log(jQueryObject.result());
+
+ // Object key base
+ jQueryObject.x = 'Niel';
+ jQueryObject.y = 'Fernandez';
+ console.log(jQueryObject.result()['getFullName']);
+```
+
 <br />Reference:
 <br />https://github.com/nielsoffice/JSModulePattern
 <br />https://github.com/nielsoffice/JSObject
