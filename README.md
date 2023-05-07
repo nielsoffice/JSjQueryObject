@@ -113,7 +113,7 @@ JavaScript jQuery Object
     y : 'Dev',  // Property Initial Value
     result : function() {
     
-       let name = this.x;
+       let name = this.x.toUpperCase(); // This how modified set value property !
        let lastName = this.y;
     
        const getNF = function() { 
